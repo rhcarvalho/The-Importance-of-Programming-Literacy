@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
 
-  <title>rhcarvalho/The-Importance-of-Programming-Literacy @ GitHub</title>
+  <title>The Importance of Programming Literacy</title>
 
   <style type="text/css">
     body {
@@ -35,12 +35,12 @@
 
   <div id="container">
 
-    <div class="download">
+    <!--<div class="download">
       <a href="https://github.com/rhcarvalho/The-Importance-of-Programming-Literacy/zipball/master">
         <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
       <a href="https://github.com/rhcarvalho/The-Importance-of-Programming-Literacy/tarball/master">
         <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
+    </div>-->
 
     <h1><a href="https://github.com/rhcarvalho/The-Importance-of-Programming-Literacy">The Importance of Programming Literacy</a>
       <span class="small">by <a href="https://github.com/rhcarvalho">rhcarvalho</a></span></h1>
@@ -50,376 +50,49 @@
     </div>
 
     
-      <p>======================================
-The Importance of Programming Literacy
-======================================
+<p><em>The Importance of Programming Literacy</em></p>
+<blockquote>
+<p>Presented PyCon keynote, March 2007, Chicago, IL
+by Robert M. Lefkowitz, MIT Alumnus, 1975</p>
+</blockquote>
+<p>Thomas Jefferson believed that in order for a nation to be free its citizens needed to be educated. In fact he believed in having some kind of literacy requirement somewhere in the constitution. Didn't make it in. But it's a common theme in our republic. If you wanted to have freedom, you had to be literate.</p>
+<p>So my interest in this particular topic in working with free software is the hypothesis that free software only matters to those who can read it. Today maybe 2% of the population are programmers who read software. Which means it'd be the equivalent to a democracy, only 2% of the population could read. So if you had freedom of the press it wouldn't matter because nobody (or very few people) could actually read it.</p>
+<p>One of the things that originally attracted me to Python was reading about CPFree. I know some of you haven't heard of this. It was "computer programming for everyone". It was a project Guido van Rossum launched in 99, 98 somewhere around there. Which was an effort to improve the state of the art of computer use by empowering all users to be computer programmers. I thought that was a noble goal. </p>
 
-> Presented PyCon keynote, March 2007, Chicago, IL by Robert M. Lefkowitz,
-MIT Alumnus, 1975
+<p>But lately you get more and more people complaining about the fact it's really hard to learn to program. Along ran this article by David Brin about <a title="Why Johnny Can't Code by David Brin" href="http://www.salon.com/technology/feature/2006/09/14/basic/">Why Johnny Can't Code</a>. </p>
+<p>Recently Nat Torkinton in New Zealand posted <a title="Teaching Kids to Program" href="http://radar.oreilly.com/archives/2008/05/teaching-kids-programming.html">on his blog</a>  saying "I've been trying to teach programming to kids at the local school. I learned on basic but people don't do that anymore so what do you use to teach them? Because it's not as easy as it used to be when I was growing up." I've heard people much younger than me saying that. </p>
+<p>So in contrast to what Adell was talking about yesterday -- how to get computers into the classroom and the advantages that could bring -- I want to take a slightly different tack in talking to some of you last night in the bar over beers until very late. I want to make the following distinction: I got my bachelor's degree in computer science at a prestigious university and not once did we use a computer. Because computer science was apparently unrelated to the use of computers.</p>
+<p>Now one of the reasons I went into computer science was to actually work with a computer. So I asked around and I had to sign up for courses in the Sloan School, which is the business school because computers are business equipment. So I come from the heritage where learning how to program and having a computer are <em>orthogonal</em>. You could have a computer and learn how to program but you didn't have to. So I want to focus on that aspect of it. That's the question I want to ask about computer literacy. Aside from the computer part of it. Let's leave the computer out of it for a minute. And just think about the literacy part means.</p>
+<p>So the text book they used after I left M.I.T. 10 years later was "The Structure and Interpretation of Computer Programs" by Abelson and Sussman. Right at the beginning of this book says "First we want to establish the idea that a computer language is not just a way to get a computer to perform operations." Programs are for people to read, to understand what it was you were trying to accomplish. Programming is an explication of an algorithm in a way that piece of sand could understand what you are talking about. Which means some other human could understand what you were talking about. And the fact that the piece of sand could do something actionable with it was an incidental bonus. But not the point.</p>
 
-Thomas Jefferson believed that in order for a nation to be free its citizens
-needed to be educated. In fact he believed in having some kind of literacy
-requirement somewhere in the constitution. Didn't make it in. But it's a
-common theme in our republic. If you wanted to have freedom, you had to be
-literate.
+<p>Now Sussman hadn't written this book yet but he was my freshman advisor. This was in 1970 that I started learning Lisp. Richard Stallman was there around the same time. So this whole notion about the importance of the text itself and the importance of the communication between the individuals the source code represented as opposed to the hardware was in the air. It wasn't just in the air on the east coast it was also in the air on the west coast. Don Knuth wrote a book called "Literate Programming" in which he observes that the time is ripe to consider programs to be works of literature. To this end he built up a set of programs to assist you in that endeavor because his view was that a programmer is analogous to an essayist whose main concern is the exposition of the algorithm. And the fact that you could buy <em>a modified lump of sand</em> that could do something with it was an interesting by-product. </p>
+<p>So this is the background that I approach the whole idea of computer literacy and computer programming. What does it mean to be a computer programmer and be literate. It's all about the language. So this is a wonderful place to talk about that. This is a Python conference. Python being a language. It's a language-specific conference so one would think here language matters. Language being a <em>liberal</em> art. </p>
+<p>There is this wonderful trio of books by Steven Roger Fischer. Starts with a history of language. It talks about a the development of this notion of communicating using symbols. It then moves on to a history of reading which I think is the most interesting one. Because when most people think about a language they think about the writing which is the third book in the series. There's an interesting story about the technology of reading we'll come to. I wound up on this book called "The Economics of Attention" because I was working for a while at a place called Root Markets which talked about the new Attention Economy. Most people who talk about the Attention Economy are talking about advertising. Media business. Selling advertising. The interesting thing about this book is that the author, Richard Lanham was a professor of Rhetoric and English (retired). Which led me eventually to this other book because in merely an hour and a half I'm not going to do much more than state the thesis and possibly a few arguments around it. From there I'll leave you with some background material you might want to follow up on to the extent you found it interesting. So I came across this book from 1986 by Bruce Kimbal called <a href="http://www.amazon.com/Orators-Philosophers-History-Liberal-Education/dp/0874475147">Orators and Philosophers</a>. It was a particular passage that inspired this talk. </p>
+<p>The point that he makes is that there are two traditions of learning that go back to the ancient Greeks. So this is a 2300 year old argument that <a href="http://en.wikipedia.org/wiki/Plato">Plato</a> started with <a href="http://en.wikipedia.org/wiki/Isocrates">Isocrates</a>. On the one had we have the tradition of Philosophers. That the important thing is the pursuit of knowledge. To learn the truth. That tradition comes forward through the middle ages and into the Renaissance and becomes the tradition of scientific inquiry.  Finally onto our modern research universities. It's the foundation of what people do in the sciences. They probe the universe. They search for the ultimate truth. They ask the questions. They find the answers. <em>That's the mission</em>.</p>
 
-So my interest in this particular topic in working with free software is the
-hypothesis that free software only matters to those who can read it. Today
-maybe 2% of the population are programmers who read software. Which means
-it'd be the equivalent to a democracy, only 2% of the population could read.
-So if you had freedom of the press it wouldn't matter because nobody (or very
-few people) could actually read it.
+<p>But there was another tradition. The oratorical tradition. The <em>rhetorical</em> tradition. In which the important thing was not discovering the truth, although that was something you had to do. But is wasn't the key thing. The key thing was building up of a community of learning and knowledge around what it was you were investigating. And the building of the community; the communication of what it was you were learning was the most important thing. That knowing truth without being able to spread the word <em>was of no value</em>. It didn't change anything. If you knew, then eventually you would die and that would be it. So what you needed to be able to do to take what you know and figure out how to communicate it. So the science wasn't philosophy it was <em>sophism</em>. What was important about it was the ability to talk about it.</p>
+<p>Now what happened? Plato thought this was terrible. Because then what happens is you start to convince people of things that maybe wasn't the whole truth. Maybe you weren't sure about it. Maybe you're mistaken. But you're so good at convincing people that you convince them of all these wrong things and that was terrible. In fact in Plato's republic, his utopia, poets were <em>banned</em>. It was a <em>crime</em> to be a poet. Because poetry was all about expressing the idea. How you express it is important. And that was a bad thing.</p>
+<p>This distinction, in my view, is the essence of the divide between free software and proprietary software. Proprietary software says what's important is: Is this software functional? Does it meet your requirements? Does it do what you need it to do at a reasonable price? Is it reliable and robust? Because if it is then what difference does it make how it's written? But the free software people say now the most important thing is <em>the building of the community of learning around this software</em>. And yes it would be nice if it worked really well. But even if it didn't. Even if it were less feature-full and not quite as robust it would still be better than that proprietary piece of software. Because that property piece of software wouldn't allow you to build that community of learning which is the most important thing. It's the <em>centrality of the text</em> that goes back to Isocrates.</p>
 
-One of the things that originally attracted me to Python was reading about
-CPFree. I know some of you haven't heard of this. It was "computer
-programming for everyone". It was a project Guido van Rossum launched in 99,
-98 somewhere around there. Which was an effort to improve the state of the
-art of computer use by empowering all users to be computer programmers. I
-thought that was a noble goal.
+<p>Now when you think about it this way the schism between the free software and the open source software is revealed. And the open source guys are on the proprietary software side of this divide. Because the argument the open source proponents make is "No let's not talk about this freedom thing. That's not the issue. The reason open source is great is because it's a better engineering methodology. So if you use open source software your software will be more feature-full and more robust and more maintainable." Which may be true. But wouldn't be true 100% of the time. There might then be the proprietary piece of software for in which that particular instance would happen to be more feature-full. More reliable more efficient. And therefore if the important thing is the functionality then the open source guys would have to admit that you ought to use that. Because it's not about the text, not about freedom.</p>
+<p>So that's what motivates the distinction. And it's not a new argument. It's an argument that's been going on for thousands of years. Although the philosophers keep winning. Even today people's whose job it is to be a rhetorician -- politicians -- if they want to totally insult their opponent what do they say? "He's indulging in <em>mere</em> rhetoric!" Nobody uses the word rhetoric without sticking the adjective "mere" in front of it. Rhetoric is always <em>mere</em>. And sophistry has come to mean, well, not a positive thing. As a brief aside one thing that leaps off the page of this particular passage is that in mentioning the litany of people of whom the line of oratorical tradition goes, starting with Isocrates and Cicero we come to Isadore... the... Oh, I'm sorry I expected a big cheer! Because, of course, heh, as everyone knows... [audience laughs]  in 1999 <a href="http://en.wikipedia.org/wiki/Isidore_of_Seville">Isadore of Seville</a> was nominated to be the patron saint of the Internet! And of programmers! And, I believe, in 2004 he was actually named the patron saint of the Internet. So, y'know, in case you're having trouble with connectivity... [laughter]. Anyway the fact that the patron saint happens to be on the oratorical and rhetorical side of the divide between the philosophers and the rhetoricians can be no coincidence.</p>
+<p>Turns out I was a nerd's nerd. I was a computer science major in the days whenever you'd say "Oh I'm a computer programmer" people would say invariably -- in the first five years I was doing this -- would start telling me a story about some guy who had gotten a phone bill for a million dollars. So what people knew in those days is that computers were something you used to make phone bills. And I was the kind of guy they would say "Don't let him talk to the customers or the user because he's too geeky". So I was certainly not interested in rhetoric and literature. But once I started pursuing this path of course I became interested. So I had to start reading up on the <a href="http://en.wikipedia.org/wiki/Trivium">Trivium</a>. The Trivium is the three subjects that everyone had to learn. The basic education for the last 2000 years. This particular textbook was written in 1938 by Sister Mariam Joseph. The Trivium consisted of three parts. Grammar, Logic and Rhetoric. This is what Sister Mariam has to say in the opening chapter: "Logic is concerned with the thing <em>as it is known</em>. Grammar is concerned with the thing <em>as it is symbolized</em>. Rhetoric is the art of the thing <em>as it is communicated</em>. So that <em>rhetoric is the art of communication of symbols ideas about reality</em>. And I want <em>that</em> to be the definition of computer programming. That's the tradition I came out of. Writing a computer program is about explicating your algorithm through the use of some sort of symbolic method to others. Hopefully it's an idea about reality. For those of you into Second Life and all that kinda stuff it doesn't necessarily have to be about <em>this</em> reality. But some kind of reality.</p>
 
-But lately you get more and more people complaining about the fact it's
-really hard to learn to program. Along ran this article by David Brin about
-`Why Johnny Can't Code`_.
+<p>But this is not everyone's idea of computer literacy. In fact there is a computer literacy homepage. If you look there you will find that they define computer literacy as, specifically, the ability to use applications rather than to program. In many cases that's what our schools believe. In my school district in the first grade they start teaching you how to make power point presentations. This is the skill everyone need to know so by the second grade they are Power Point experts. They are "computer literate". Now this is a definition. It is a definition I reject. It is not a definition I wish to pursue. So if this definition of computer literacy seems like an adequate definition of computer literacy then my talk is done. Because I have nothing to add. But if the definition of computer literacy is the art of communication of symbols ideas about reality then it's a rhetorical notion. And I imagine the curriculum for teaching computer literacy would look an awful lot like the curriculum of teaching rhetoric. Would look an awful lot like what Sister Mariam Joseph was teaching her students in 1938. And they didn't use a printing press. Even though you're talking about English or Latin you didn't need a printing press. So if you're going to learn computer literacy as we've now defined it -- and I know there are people who may disagree with that and we're going to open up the microphone soon -- you don't need a computer! Although there are things one could learn about computers if one had a computer that would be difficult to learn without it. Much as there are things one could learn about publishing you would only be able to learn about with access to a printing press. But it's a different subject.</p>
+<p>Now at my son's local high school we have a TV station. The kids can sign up for TV production. The project for this semester is they have to put on a newscast. So they run around with cameras fin the people they know trying to find newsworthy events.</p>
+<p>The other interesting thing Adell mentioned yesterday was the argument of when you should start. So, <a href="http://en.wikipedia.org/wiki/Quintilian">Quintilian</a>, another one of the great rhetoricians, lived in the first century A.D. in the region in the world now known as Spain. Has this talk where he's talking about educating children and of course he's incensed that there are people in this modern day and age, 80 A.D., y'know, the flower of the empire, who think that you should wait until children are <em>7 years old</em> before you should be teaching them how to read. He thought it was ridiculous! Persiphous (?) lived in 250 B.C. Even back then they were saying, well, in the first three years you don't teach 'em how to read but after that you start them working on the Trivium. They're old enough to start learning rhetoric. So yeah we don't educate our kids as well as we did back then in the good old days.</p>
+<p>I mention reading technology. We usually don't associate technology with reading. I want to get the highlights here. This thing about reading technology is that it evolved quite slowly. You might think a lot of this overlaps with writing technology. But it really mattered on the reading side. And you can do experiments to prove this to yourself today. But I chart some of the major innovations over the course of history. I think four really stand out. </p>
+<p>First is the invention of vowels. 1300 years before that we had writing systems that were consonantal writing systems. Here people wrote down the consonants because that was the important part. Today there still are languages where the scripts originated before 850 b.c. and they still don't have vowels. They had to add little things like dots and dashes and little diacritical marks to say, oh, it's probably an "o" there. </p>
+<p>Then the Greeks, that was their great claim to fame. That's why we still use a sort of derivative of Greek alphabet today. The Greeks hit upon the notion that vowels would make it really useful when you were reading something to help disambiguate what the word meant. And they were right. Now you can play these parlor games with the text with all the vowels removed you can sorta kinda read it. But it's harder to read text without vowels in it. </p>
 
-Recently Nat Torkinton in New Zealand posted `on his blog`_ saying "I've been
-trying to teach programming to kids at the local school. I learned on basic
-but people don't do that anymore so what do you use to teach them? Because
-it's not as easy as it used to be when I was growing up." I've heard people
-much younger than me saying that.
+<p>Then around 100 a.d. -- although there is a rumor that Julius Caesar had a codex. So if Julius Caesar had a codex then that would be 100 years earlier, but this might be an urban legend so we'll let the 100 a. d. date stand -- A codex is what we used to call a book. This idea instead of keeping your writing on a scroll -- and there were two schools of scrolling: Up and down and left and right. We're up and down today. The Hebrews did left and right -- what the codex allowed was, if you think about it, random access. Think about Le Miserable. You're reading this thing by Dumas it's 1200 pages long. You remember this great passage at page 600. Now, on a scroll… [audience laughter]. So the codex was a huge innovation reading-wise. In terms of being able to share books. Because I could be reading a different place than you are and it's not that hard to go back and forth. As well as being able to going back for reference without having to spend an hour rolling through 600 pages.</p>
+<p>And then of course at 800 a. d. now that was really the crux and we'll come back to it, came spaces between words. Made a huge difference. </p>
+<p>And then finally the printing press which is the one that gets all the, erm, press because it's the last one that happens. Still fresh in everyone's mind. Everyone's always comparing the Internet is like the printing press. Nobody ever says the Internet is like the codex. </p>
+<p>But when you look at the spacing between these things it proves that this "Internet time" thing is really true. It takes 1000 years to invent vowels. Then it takes 950 years before you're into the codex. Speeding up, right? Then it takes a mere 700 years before you get the next big innovation, spaces between words. Then 650 years after that and you get the printing press. You figure time is accelerating! Another 550 years we should have the next big breakthrough, that's … wow! Right about now! It might have already happened and we haven't realized it yet! I wonder what it could be! [audience laughter] You saying "Oh, it's the Internet!" Oh, I'm not so sure. Maybe it isn't the Internet.</p>
+<p>So what is it that happened about 800? Actually it was around 789 a. d. it got kicked off. What was it that got kicked off? This whole initiative to reform the education system. Just like we're trying to do today. That's what led to the birth of the technology. So maybe as we push this reform agenda through maybe that breakthrough will happen. So the problem that Charlemagne had was the way books were manufactured, the way knowledge was preserved was people copied it in scriptoria. These places where monks hung out where they wrote and copied the books down. The problem was there was no standard way of writing things down. There was no standard font. People wrote things any which way. Which meant that it was actually very difficult to read. It became speciality skill: Like you could read that monk's books, but you couldn't read that other monk's books. So knowledge was getting lost, getting diffused and people would copy stuff and they couldn't read it so they miscopied, there were getting all these errors they didn't have checksums [audience laughter]. It was terrible! They wanted a standard font that way everyone could read the same stuff. That's how they were going to get to literacy. This is what they came up with: <a href="http://en.wikipedia.org/wiki/Carolingian_minuscule">The Carolingian Minuscule</a>. It was a standard font. The real thing that was standardized was the ascenders and decenders. The height of the font was standardized. What this did is it gave words kind of a shape. What actually became possible was to read silently. Because before that reading was a noisy business. It had to deciphered laboriously. You had to puzzle it out what the words and letters meant. And then you'd say it out loud and you did that because you could then memorize it. Then you worked your way through the page, deciphered it and repeated it back to yourself . For a little mnemonic they would draw little picture on the side. So when you got to that page you'd say "Oh yeah, I remember that page now" because you memorized it. But you needed that sort of mnemonic trigger. So the guy who came up with this script was <a href="http://en.wikipedia.org/wiki/Alcuin">Alcuin of York</a>. He wanted to be remembered for somebody who "made others drunk on the wine of ancient learning". But the key thing about the Carolingian Minuscule was he invented spaces between words. The reason you had to puzzle this stuff out was because it was just a whole bunch of letters strung together in a row. It was very difficult to figure out when words started and end it. If you put spaces between words and standard ascenders and decenders and it turns out when you look at a page words had shape. You could see the whole word jumps out of the page at you and you could just … read it! Silently. Without sounding it out. Grown ups could do it. Fancy that. White space being significant. [audience laughter, broad applause]  Who'dve thought!</p>
 
-So in contrast to what Adell was talking about yesterday -- how to get
-computers into the classroom and the advantages that could bring -- I want to
-take a slightly different tack in talking to some of you last night in the
-bar over beers until very late. I want to make the following distinction: I
-got my bachelor's degree in computer science at a prestigious university and
-not once did we use a computer. Because computer science was apparently
-unrelated to the use of computers.
 
-Now one of the reasons I went into computer science was to actually work with
-a computer. So I asked around and I had to sign up for courses in the Sloan
-School, which is the business school because computers are business
-equipment. So I come from the heritage where learning how to program and
-having a computer are *orthogonal*. You could have a computer and learn how
-to program but you didn't have to. So I want to focus on that aspect of it.
-That's the question I want to ask about computer literacy. Aside from the
-computer part of it. Let's leave the computer out of it for a minute. And
-just think about the literacy part means.
-
-So the text book they used after I left M.I.T. 10 years later was "The
-Structure and Interpretation of Computer Programs" by Abelson and Sussman.
-Right at the beginning of this book says "First we want to establish the idea
-that a computer language is not just a way to get a computer to perform
-operations." Programs are for people to read, to understand what it was you
-were trying to accomplish. Programming is an explication of an algorithm in a
-way that piece of sand could understand what you are talking about. Which
-means some other human could understand what you were talking about. And the
-fact that the piece of sand could do something actionable with it was an
-incidental bonus. But not the point.
-
-Now Sussman hadn't written this book yet but he was my freshman advisor. This
-was in 1970 that I started learning Lisp. Richard Stallman was there around
-the same time. So this whole notion about the importance of the text itself
-and the importance of the communication between the individuals the source
-code represented as opposed to the hardware was in the air. It wasn't just in
-the air on the east coast it was also in the air on the west coast. Don Knuth
-wrote a book called "Literate Programming" in which he observes that the time
-is ripe to consider programs to be works of literature. To this end he built
-up a set of programs to assist you in that endeavor because his view was that
-a programmer is analogous to an essayist whose main concern is the exposition
-of the algorithm. And the fact that you could buy *a modified lump of sand*
-that could do something with it was an interesting by-product.
-
-So this is the background that I approach the whole idea of computer literacy
-and computer programming. What does it mean to be a computer programmer and
-be literate. It's all about the language. So this is a wonderful place to
-talk about that. This is a Python conference. Python being a language. It's a
-language-specific conference so one would think here language matters.
-Language being a *liberal* art.
-
-There is this wonderful trio of books by Steven Roger Fischer. Starts with a
-history of language. It talks about a the development of this notion of
-communicating using symbols. It then moves on to a history of reading which I
-think is the most interesting one. Because when most people think about a
-language they think about the writing which is the third book in the series.
-There's an interesting story about the technology of reading we'll come to. I
-wound up on this book called "The Economics of Attention" because I was
-working for a while at a place called Root Markets which talked about the new
-Attention Economy. Most people who talk about the Attention Economy are
-talking about advertising. Media business. Selling advertising. The
-interesting thing about this book is that the author, Richard Lanham was a
-professor of Rhetoric and English (retired). Which led me eventually to this
-other book because in merely an hour and a half I'm not going to do much more
-than state the thesis and possibly a few arguments around it. From there I'll
-leave you with some background material you might want to follow up on to the
-extent you found it interesting. So I came across this book from 1986 by
-Bruce Kimbal called `Orators and Philosophers`_. It was a particular passage
-that inspired this talk.
-
-The point that he makes is that there are two traditions of learning that go
-back to the ancient Greeks. So this is a 2300 year old argument that `Plato`_
-started with `Isocrates`_. On the one had we have the tradition of
-Philosophers. That the important thing is the pursuit of knowledge. To learn
-the truth. That tradition comes forward through the middle ages and into the
-Renaissance and becomes the tradition of scientific inquiry. Finally onto our
-modern research universities. It's the foundation of what people do in the
-sciences. They probe the universe. They search for the ultimate truth. They
-ask the questions. They find the answers. *That's the mission*.
-
-But there was another tradition. The oratorical tradition. The *rhetorical*
-tradition. In which the important thing was not discovering the truth,
-although that was something you had to do. But is wasn't the key thing. The
-key thing was building up of a community of learning and knowledge around
-what it was you were investigating. And the building of the community; the
-communication of what it was you were learning was the most important thing.
-That knowing truth without being able to spread the word *was of no value*.
-It didn't change anything. If you knew, then eventually you would die and
-that would be it. So what you needed to be able to do to take what you know
-and figure out how to communicate it. So the science wasn't philosophy it was
-*sophism*. What was important about it was the ability to talk about it.
-
-Now what happened? Plato thought this was terrible. Because then what happens
-is you start to convince people of things that maybe wasn't the whole truth.
-Maybe you weren't sure about it. Maybe you're mistaken. But you're so good at
-convincing people that you convince them of all these wrong things and that
-was terrible. In fact in Plato's republic, his utopia, poets were *banned*.
-It was a *crime* to be a poet. Because poetry was all about expressing the
-idea. How you express it is important. And that was a bad thing.
-
-This distinction, in my view, is the essence of the divide between free
-software and proprietary software. Proprietary software says what's important
-is: Is this software functional? Does it meet your requirements? Does it do
-what you need it to do at a reasonable price? Is it reliable and robust?
-Because if it is then what difference does it make how it's written? But the
-free software people say now the most important thing is *the building of the
-community of learning around this software*. And yes it would be nice if it
-worked really well. But even if it didn't. Even if it were less feature-full
-and not quite as robust it would still be better than that proprietary piece
-of software. Because that property piece of software wouldn't allow you to
-build that community of learning which is the most important thing. It's the
-*centrality of the text* that goes back to Isocrates.
-
-Now when you think about it this way the schism between the free software and
-the open source software is revealed. And the open source guys are on the
-proprietary software side of this divide. Because the argument the open
-source proponents make is "No let's not talk about this freedom thing. That's
-not the issue. The reason open source is great is because it's a better
-engineering methodology. So if you use open source software your software
-will be more feature-full and more robust and more maintainable." Which may
-be true. But wouldn't be true 100% of the time. There might then be the
-proprietary piece of software for in which that particular instance would
-happen to be more feature-full. More reliable more efficient. And therefore
-if the important thing is the functionality then the open source guys would
-have to admit that you ought to use that. Because it's not about the text,
-not about freedom.
-
-So that's what motivates the distinction. And it's not a new argument. It's
-an argument that's been going on for thousands of years. Although the
-philosophers keep winning. Even today people's whose job it is to be a
-rhetorician -- politicians -- if they want to totally insult their opponent
-what do they say? "He's indulging in *mere* rhetoric!" Nobody uses the word
-rhetoric without sticking the adjective "mere" in front of it. Rhetoric is
-always *mere*. And sophistry has come to mean, well, not a positive thing. As
-a brief aside one thing that leaps off the page of this particular passage is
-that in mentioning the litany of people of whom the line of oratorical
-tradition goes, starting with Isocrates and Cicero we come to Isadore...
-the... Oh, I'm sorry I expected a big cheer! Because, of course, heh, as
-everyone knows... [audience laughs] in 1999 `Isadore of Seville`_ was
-nominated to be the patron saint of the Internet! And of programmers! And, I
-believe, in 2004 he was actually named the patron saint of the Internet. So,
-y'know, in case you're having trouble with connectivity... [laughter]. Anyway
-the fact that the patron saint happens to be on the oratorical and rhetorical
-side of the divide between the philosophers and the rhetoricians can be no
-coincidence.
-
-Turns out I was a nerd's nerd. I was a computer science major in the days
-whenever you'd say "Oh I'm a computer programmer" people would say invariably
--- in the first five years I was doing this -- would start telling me a story
-about some guy who had gotten a phone bill for a million dollars. So what
-people knew in those days is that computers were something you used to make
-phone bills. And I was the kind of guy they would say "Don't let him talk to
-the customers or the user because he's too geeky". So I was certainly not
-interested in rhetoric and literature. But once I started pursuing this path
-of course I became interested. So I had to start reading up on the
-`Trivium`_. The Trivium is the three subjects that everyone had to learn. The
-basic education for the last 2000 years. This particular textbook was written
-in 1938 by Sister Mariam Joseph. The Trivium consisted of three parts.
-Grammar, Logic and Rhetoric. This is what Sister Mariam has to say in the
-opening chapter: "Logic is concerned with the thing *as it is known*. Grammar
-is concerned with the thing *as it is symbolized*. Rhetoric is the art of the
-thing *as it is communicated*. So that *rhetoric is the art of communication
-of symbols ideas about reality*. And I want *that* to be the definition of
-computer programming. That's the tradition I came out of. Writing a computer
-program is about explicating your algorithm through the use of some sort of
-symbolic method to others. Hopefully it's an idea about reality. For those of
-you into Second Life and all that kinda stuff it doesn't necessarily have to
-be about *this* reality. But some kind of reality.
-
-But this is not everyone's idea of computer literacy. In fact there is a
-computer literacy homepage. If you look there you will find that they define
-computer literacy as, specifically, the ability to use applications rather
-than to program. In many cases that's what our schools believe. In my school
-district in the first grade they start teaching you how to make power point
-presentations. This is the skill everyone need to know so by the second grade
-they are Power Point experts. They are "computer literate". Now this is a
-definition. It is a definition I reject. It is not a definition I wish to
-pursue. So if this definition of computer literacy seems like an adequate
-definition of computer literacy then my talk is done. Because I have nothing
-to add. But if the definition of computer literacy is the art of
-communication of symbols ideas about reality then it's a rhetorical notion.
-And I imagine the curriculum for teaching computer literacy would look an
-awful lot like the curriculum of teaching rhetoric. Would look an awful lot
-like what Sister Mariam Joseph was teaching her students in 1938. And they
-didn't use a printing press. Even though you're talking about English or
-Latin you didn't need a printing press. So if you're going to learn computer
-literacy as we've now defined it -- and I know there are people who may
-disagree with that and we're going to open up the microphone soon -- you
-don't need a computer! Although there are things one could learn about
-computers if one had a computer that would be difficult to learn without it.
-Much as there are things one could learn about publishing you would only be
-able to learn about with access to a printing press. But it's a different
-subject.
-
-Now at my son's local high school we have a TV station. The kids can sign up
-for TV production. The project for this semester is they have to put on a
-newscast. So they run around with cameras fin the people they know trying to
-find newsworthy events.
-
-The other interesting thing Adell mentioned yesterday was the argument of
-when you should start. So, `Quintilian`_, another one of the great
-rhetoricians, lived in the first century A.D. in the region in the world now
-known as Spain. Has this talk where he's talking about educating children and
-of course he's incensed that there are people in this modern day and age, 80
-A.D., y'know, the flower of the empire, who think that you should wait until
-children are *7 years old* before you should be teaching them how to read. He
-thought it was ridiculous! Persiphous (?) lived in 250 B.C. Even back then
-they were saying, well, in the first three years you don't teach 'em how to
-read but after that you start them working on the Trivium. They're old enough
-to start learning rhetoric. So yeah we don't educate our kids as well as we
-did back then in the good old days.
-
-I mention reading technology. We usually don't associate technology with
-reading. I want to get the highlights here. This thing about reading
-technology is that it evolved quite slowly. You might think a lot of this
-overlaps with writing technology. But it really mattered on the reading side.
-And you can do experiments to prove this to yourself today. But I chart some
-of the major innovations over the course of history. I think four really
-stand out.
-
-First is the invention of vowels. 1300 years before that we had writing
-systems that were consonantal writing systems. Here people wrote down the
-consonants because that was the important part. Today there still are
-languages where the scripts originated before 850 b.c. and they still don't
-have vowels. They had to add little things like dots and dashes and little
-diacritical marks to say, oh, it's probably an "o" there.
-
-Then the Greeks, that was their great claim to fame. That's why we still use
-a sort of derivative of Greek alphabet today. The Greeks hit upon the notion
-that vowels would make it really useful when you were reading something to
-help disambiguate what the word meant. And they were right. Now you can play
-these parlor games with the text with all the vowels removed you can sorta
-kinda read it. But it's harder to read text without vowels in it.
-
-Then around 100 a.d. -- although there is a rumor that Julius Caesar had a
-codex. So if Julius Caesar had a codex then that would be 100 years earlier,
-but this might be an urban legend so we'll let the 100 a. d. date stand -- A
-codex is what we used to call a book. This idea instead of keeping your
-writing on a scroll -- and there were two schools of scrolling: Up and down
-and left and right. We're up and down today. The Hebrews did left and right
--- what the codex allowed was, if you think about it, random access. Think
-about Le Miserable. You're reading this thing by Dumas it's 1200 pages long.
-You remember this great passage at page 600. Now, on a scroll? [audience
-laughter]. So the codex was a huge innovation reading-wise. In terms of being
-able to share books. Because I could be reading a different place than you
-are and it's not that hard to go back and forth. As well as being able to
-going back for reference without having to spend an hour rolling through 600
-pages.
-
-And then of course at 800 a. d. now that was really the crux and we'll come
-back to it, came spaces between words. Made a huge difference.
-
-And then finally the printing press which is the one that gets all the, erm,
-press because it's the last one that happens. Still fresh in everyone's mind.
-Everyone's always comparing the Internet is like the printing press. Nobody
-ever says the Internet is like the codex.
-
-But when you look at the spacing between these things it proves that this
-"Internet time" thing is really true. It takes 1000 years to invent vowels.
-Then it takes 950 years before you're into the codex. Speeding up, right?
-Then it takes a mere 700 years before you get the next big innovation, spaces
-between words. Then 650 years after that and you get the printing press. You
-figure time is accelerating! Another 550 years we should have the next big
-breakthrough, that's ? wow! Right about now! It might have already happened
-and we haven't realized it yet! I wonder what it could be! [audience
-laughter] You saying "Oh, it's the Internet!" Oh, I'm not so sure. Maybe it
-isn't the Internet.
-
-So what is it that happened about 800? Actually it was around 789 a. d. it
-got kicked off. What was it that got kicked off? This whole initiative to
-reform the education system. Just like we're trying to do today. That's what
-led to the birth of the technology. So maybe as we push this reform agenda
-through maybe that breakthrough will happen. So the problem that Charlemagne
-had was the way books were manufactured, the way knowledge was preserved was
-people copied it in scriptoria. These places where monks hung out where they
-wrote and copied the books down. The problem was there was no standard way of
-writing things down. There was no standard font. People wrote things any
-which way. Which meant that it was actually very difficult to read. It became
-speciality skill: Like you could read that monk's books, but you couldn't
-read that other monk's books. So knowledge was getting lost, getting diffused
-and people would copy stuff and they couldn't read it so they miscopied,
-there were getting all these errors they didn't have checksums [audience
-laughter]. It was terrible! They wanted a standard font that way everyone
-could read the same stuff. That's how they were going to get to literacy.
-This is what they came up with: `The Carolingian Minuscule`_. It was a
-standard font. The real thing that was standardized was the ascenders and
-decenders. The height of the font was standardized. What this did is it gave
-words kind of a shape. What actually became possible was to read silently.
-Because before that reading was a noisy business. It had to deciphered
-laboriously. You had to puzzle it out what the words and letters meant. And
-then you'd say it out loud and you did that because you could then memorize
-it. Then you worked your way through the page, deciphered it and repeated it
-back to yourself . For a little mnemonic they would draw little picture on
-the side. So when you got to that page you'd say "Oh yeah, I remember that
-page now" because you memorized it. But you needed that sort of mnemonic
-trigger. So the guy who came up with this script was `Alcuin of York`_. He
-wanted to be remembered for somebody who "made others drunk on the wine of
-ancient learning". But the key thing about the Carolingian Minuscule was he
-invented spaces between words. The reason you had to puzzle this stuff out
-was because it was just a whole bunch of letters strung together in a row. It
-was very difficult to figure out when words started and end it. If you put
-spaces between words and standard ascenders and decenders and it turns out
-when you look at a page words had shape. You could see the whole word jumps
-out of the page at you and you could just ? read it! Silently. Without
-sounding it out. Grown ups could do it. Fancy that. White space being
-significant. [audience laughter, broad applause] Who'dve thought!
-
-.. _Why Johnny Can't Code:
-    http://www.salon.com/technology/feature/2006/09/14/basic/
-.. _on his blog: http://radar.oreilly.com/archives/2008/05/teaching-kids-
-    programming.html
-.. _Orators and Philosophers: http://www.amazon.com/Orators-Philosophers-
-    History-Liberal-Education/dp/0874475147
-.. _Plato: http://en.wikipedia.org/wiki/Plato
-.. _Isocrates: http://en.wikipedia.org/wiki/Isocrates
-.. _Isadore of Seville: http://en.wikipedia.org/wiki/Isidore_of_Seville
-.. _Trivium: http://en.wikipedia.org/wiki/Trivium
-.. _Quintilian: http://en.wikipedia.org/wiki/Quintilian
-.. _The Carolingian Minuscule:
-    http://en.wikipedia.org/wiki/Carolingian_minuscule
-.. _Alcuin of York: http://en.wikipedia.org/wiki/Alcuin
-</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <h2>Download</h2>
+    <!--<h2>Download</h2>
     <p>
       You can download this project in either
       <a href="https://github.com/rhcarvalho/The-Importance-of-Programming-Literacy/zipball/master">zip</a> or
@@ -428,10 +101,15 @@ significant. [audience laughter, broad applause] Who'dve thought!
     <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
       by running:
       <pre>$ git clone git://github.com/rhcarvalho/The-Importance-of-Programming-Literacy</pre>
-    </p>
+    </p>-->
 
     <div class="footer">
       get the source code on GitHub : <a href="https://github.com/rhcarvalho/The-Importance-of-Programming-Literacy">rhcarvalho/The-Importance-of-Programming-Literacy</a>
+      
+      <blockquote>
+      Originally seen at <a href="http://www.cirrusmachina.com/blog/serve/the-importance-of-programming-literacy/">The Importance of Programming Literacy/</a> posted by <a href="http://www.cirrusmachina.com/user/nbauman/home/">Nick Bauman</a>.
+      This is a "fork" mostly for ease of fixing typos.
+      </blockquote>
     </div>
 
   </div>
